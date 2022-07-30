@@ -1435,12 +1435,15 @@ button, input, select, option, textarea {
 	}
 
 	.hero {
+		position: relative;
 		background-image: url('../img/background-mobile.jpg');
 	}
 
 	.hero__inner {
-		padding-top: 222px;
+		padding: 0;
 		margin-left: 20px;
+		position: absolute;
+		bottom: 120px;
 	}
 
 	.hero__title {
@@ -1628,9 +1631,8 @@ button, input, select, option, textarea {
 	}
 
 	.hero__inner {
-		padding-top: 236px;
-		padding-bottom: 0;
 		margin-left: 0;
+		bottom: 60px;
 	}
 
 	.hero__suptitle {
