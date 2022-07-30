@@ -9,20 +9,20 @@ $(function() {
 
 
 	//* --- Sticky Nav --- *// 
-	// const stickyNavTop = $('.header__menu').offset().top;
+	const stickyNavTop = $('.header__menu').offset().top;
 
-	// const stickyNav = function() {
-	// 	let scrollTop = $(window).scrollTop();
+	const stickyNav = function() {
+		let scrollTop = $(window).scrollTop();
 
-	// 	if (scrollTop > stickyNavTop) { 
-	// 		$('.header__menu').addClass('sticky');
-	// 	} else {
-	// 		$('.header__menu').removeClass('sticky'); 
-	// 	}
-	// };
-	// $(window).scroll(function() {
-	// 	stickyNav();
-	// });
+		if (scrollTop > stickyNavTop) { 
+			$('.header__menu').addClass('sticky');
+		} else {
+			$('.header__menu').removeClass('sticky'); 
+		}
+	};
+	$(window).scroll(function() {
+		stickyNav();
+	});
 
 
 	//* --- Tabs --- *//
@@ -120,4 +120,3 @@ $(function() {
 		});
 	});
 });
-
