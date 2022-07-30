@@ -1413,11 +1413,14 @@ button, input, select, option, textarea {
     padding: 28px 0;
   }
   .hero {
+    position: relative;
     background-image: url("../img/background-mobile.jpg");
   }
   .hero__inner {
-    padding-top: 222px;
+    padding: 0;
     margin-left: 20px;
+    position: absolute;
+    bottom: 120px;
   }
   .hero__title {
     font-size: 34px;
@@ -1553,9 +1556,8 @@ button, input, select, option, textarea {
     padding: 25px 0;
   }
   .hero__inner {
-    padding-top: 236px;
-    padding-bottom: 0;
     margin-left: 0;
+    bottom: 60px;
   }
   .hero__suptitle {
     font-size: 14px;
